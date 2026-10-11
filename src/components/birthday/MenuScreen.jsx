@@ -47,6 +47,16 @@ export default function MenuScreen({ onSelect }) {
             <span className="gift-icon">🎵</span>
             <span className="gift-label">Our Song</span>
           </motion.div>
+
+          <motion.div
+            className="gift-card-btn"
+            onClick={() => onSelect('flowers')}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <span className="gift-icon">🌷</span>
+            <span className="gift-label">Flowers for You</span>
+          </motion.div>
         </div>
 
       </motion.div>

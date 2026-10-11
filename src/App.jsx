@@ -11,6 +11,7 @@ import CakeModal from './components/birthday/CakeModal';
 import NetflixMemoryPlayer from './components/birthday/NetflixMemoryPlayer';
 import MemoryVaultModal from './components/birthday/MemoryVaultModal';
 import SongStoryScreen from './components/birthday/SongStoryScreen';
+import FlowersModal from './components/birthday/FlowersModal';
 import MusicButton from './components/MusicButton';
 import FloatingHearts from './components/FloatingHearts';
 import './index.css';
@@ -92,6 +93,10 @@ function App() {
 
         {screen === 'song' && (
           <SongStoryScreen key="song" onBack={() => setScreen('menu')} />
+        )}
+
+        {screen === 'flowers' && (
+          <FlowersModal key="flowers" onBack={() => setScreen('menu')} />
         )}
       </AnimatePresence>
     </div>
