@@ -1,3 +1,5 @@
 {
-  "name": "gift-kay-lablab"
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
